@@ -1,0 +1,77 @@
+<section>
+    <h2>Acheter des fruits</h2>
+    <table class="bandes">
+      <caption>Nos tarifs de l’automne 2020</caption>
+      <thead>
+      <tr>
+        <th>Fruit</th>
+        <th>Prix</th>
+        <th>Poids du sac</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Pommes</th>
+        <td>13,50 $</td>
+        <td>10 lbs</td>
+      </tr>
+      <tr>
+        <th scope="row">Poires</th>
+        <td>20,00 $</td>
+        <td>12 lbs</td>
+      </tr>
+      <tr>
+        <th scope="row">Prunes</th>
+        <td>22,00 $</td>
+        <td>15 lbs</td>
+      </tr>
+      </tbody>
+    </table>
+    <button onclick="achat('Pomme')">Acheter un sac de pommes</button>
+    <button onclick="achat('Poire')">Acheter un sac de poires</button>
+    <button onclick="achat('Prune')">Acheter un sac de prunes</button>
+  </section>
+  <section>
+    <h2>Vos achats</h2>
+    <table>
+      <caption>Facture détaillée</caption>
+      <thead>
+      <tr>
+        <th>Fruit</th>
+        <th>Quantité (sacs)</th>
+        <th>Poids</th>
+        <th>Prix</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Pommes</th>
+        <td id="qtePomme">0</td>
+        <td class="poids" id="poidsPomme">0</td>
+        <td class="prix" id="prixPomme">0.00</td>
+      </tr>
+      <tr>
+        <th scope="row">Poires</th>
+        <td id="qtePoire">0</td>
+        <td class="poids" id="poidsPoire">0</td>
+        <td class="prix" id="prixPoire">0.00</td>
+      </tr>
+      <tr>
+        <th scope="row">Prunes</th>
+        <td id="qtePrune">0</td>
+        <td class="poids" id="poidsPrune">0</td>
+        <td class="prix" id="prixPrune">0.00</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td id="qteTotal">0</td>
+        <td class="poids" id="poidsTotal">0</td>
+        <td class="prix" id="prixTotal">0.00</td>
+      </tr>
+      </tfoot>
+    </table>
+    <button onclick="mettreAJour()">Mettre à jour la facture</button>
+  </section>
+
